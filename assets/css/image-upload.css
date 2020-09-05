@@ -1,0 +1,24 @@
+.resultImageWrapper1,.resultImageWrapper2,.resultImageWrapper3,.resultImageWrapper4,.resultImageWrapper5 {
+	display: none;
+	margin-top: 5px;
+}
+.dragArea1,.dragArea2,.dragArea3,.dragArea4,.dragArea5 {
+	background-color: #efefef;
+	border: 2px dashed #cccccc;
+	border-radius: 20px;
+	width:200px; 
+	height:200px;
+}
+.dragArea1.over,.dragArea2.over,.dragArea3.over,.dragArea4.over,.dragArea5.over {
+	border-color: #00e64d;
+	background-color: #ffffff;
+}
+#myImg1,#myImg2,#myImg3,#myImg4,#myImg5 {
+    box-shadow: rgba(0,0,0,0.4) 0 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width:180px; 
+    height:180px;
+}
+#myImg1:hover,#myImg2:hover,#myImg3:hover,#myImg4:hover,#myImg5:hover {opacity: 0.7;}

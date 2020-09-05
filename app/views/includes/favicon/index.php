@@ -1,0 +1,1 @@
+<link rel="shortcut icon" href="<?=ASSETS;?>images/favicon.ico" type="image/x-icon">

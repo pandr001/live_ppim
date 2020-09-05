@@ -1,0 +1,1 @@
+ <a href="<?=COMPANY_WEBSITE;?>" style="color:white;" target="_blank"> <?=COMPANY_NAME;?> </a>&copy; <?php echo date('Y');?>

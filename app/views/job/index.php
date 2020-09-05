@@ -1,0 +1,1 @@
+<?=$this->view('page',$data);?>
