@@ -402,6 +402,7 @@ function error_message($data){
 	echo "<div class='alert alert-error alert-dismissible' style='border: 2px solid;'>";
 	echo "<i class='icon fa fa-ban'></i>";
 	echo '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
+	echo "<script> sessionStorage.setItem('path', ''); </script>";
     foreach ( $data as $error )
 	echo "$error\n";
 	echo "</div>";
@@ -410,6 +411,7 @@ function success_message($data){
 	echo "<div class='alert alert-success alert-dismissible' style='border: 2px solid;background-color: #58bf14 !important;'>";
 	echo "<i class='icon fa fa-check'></i>";
 	echo '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
+	echo "<script> sessionStorage.setItem('path', ''); </script>";
     foreach ( $data as $error )
     echo "$error\n";
     echo "</div>";

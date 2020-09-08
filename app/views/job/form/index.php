@@ -1,10 +1,6 @@
-
-
 <style>
 .resultImageWrapper {
-
 display: none;
-
 margin-top: 5px;
 }
         .dragArea {
@@ -58,18 +54,11 @@ margin-top: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
-
 #myImg:hover {opacity: 0.7;}
-
-
 </style>
 
-		
-         
-
     <div class="row">
-        <div class="col-xs-1"></div>
-
+      <div class="col-xs-1"></div>
         <div class="col-xs-10">
            <form class="form-horizontal" method="post" enctype="multipart/form-data" responsive>
 				 <div class="card-body">
@@ -81,54 +70,54 @@ margin-top: 5px;
 							<!-- <p>Contract Number -</p> -->
 							<div class="form-group has-feedback">
 								<label class="center">First Name</label>
-							    <input type="text" class="form-control" placeholder="First Name" name="<?=$data['field'][1];?>" required value="<?=isset($_POST[$data['field'][1]]) ? $_POST[$data['field'][1]]: $data['fetch'][$data['field'][1]];?>">
+							    <input type="text" class="form-control" placeholder="First Name" name="<?=$data['field'][1];?>"  value="<?=isset($_POST[$data['field'][1]]) ? $_POST[$data['field'][1]]: $data['fetch'][$data['field'][1]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Last Name</label>
-							    <input type="text" class="form-control" placeholder="Last Name" name="<?=$data['field'][2];?>" required value="<?=isset($_POST[$data['field'][2]]) ? $_POST[$data['field'][2]]: $data['fetch'][$data['field'][2]];?>">
+							    <input type="text" class="form-control" placeholder="Last Name" name="<?=$data['field'][2];?>"  value="<?=isset($_POST[$data['field'][2]]) ? $_POST[$data['field'][2]]: $data['fetch'][$data['field'][2]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Email Address</label>
-							    <input type="email" class="form-control" placeholder="Email Address" name="<?=$data['field'][3];?>" required value="<?=isset($_POST[$data['field'][3]]) ? $_POST[$data['field'][3]]: $data['fetch'][$data['field'][3]];?>">
+							    <input type="email" class="form-control" placeholder="Email Address" name="<?=$data['field'][3];?>"  value="<?=isset($_POST[$data['field'][3]]) ? $_POST[$data['field'][3]]: $data['fetch'][$data['field'][3]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Mobile Number</label>
-							    <input type="text" class="form-control" placeholder="Mobile Number" name="<?=$data['field'][4];?>" required value="<?=isset($_POST[$data['field'][4]]) ? $_POST[$data['field'][4]]: $data['fetch'][$data['field'][4]];?>">
+							    <input type="text" class="form-control" placeholder="Mobile Number" name="<?=$data['field'][4];?>"  value="<?=isset($_POST[$data['field'][4]]) ? $_POST[$data['field'][4]]: $data['fetch'][$data['field'][4]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Street Address</label>
-							    <input type="text" class="form-control" placeholder="Street Address" name="<?=$data['field'][5];?>" required value="<?=isset($_POST[$data['field'][5]]) ? $_POST[$data['field'][5]]: $data['fetch'][$data['field'][5]];?>">
+							    <input type="text" class="form-control" placeholder="Street Address" name="<?=$data['field'][5];?>"  value="<?=isset($_POST[$data['field'][5]]) ? $_POST[$data['field'][5]]: $data['fetch'][$data['field'][5]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">No. of Panels</label>
-							    <input type="number" class="form-control" placeholder="No. of Panels" name="<?=$data['field'][6];?>" required value="<?=isset($_POST[$data['field'][6]]) ? $_POST[$data['field'][6]]: $data['fetch'][$data['field'][6]];?>">
+							    <input type="text" class="form-control" placeholder="No. of Panels" name="<?=$data['field'][6];?>"  value="<?=isset($_POST[$data['field'][6]]) ? $_POST[$data['field'][6]]: $data['fetch'][$data['field'][6]];?>">
 							</div>
 
 
 							<div class="form-group has-feedback">
 								<label class="center">Capacity of Each Panel</label>
-							    <input type="text" class="form-control" placeholder="Capacity of Each Panel" name="<?=$data['field'][7];?>" required value="<?=isset($_POST[$data['field'][7]]) ? $_POST[$data['field'][7]]: $data['fetch'][$data['field'][7]];?>">
+							    <input type="text" class="form-control" placeholder="Capacity of Each Panel" name="<?=$data['field'][7];?>"  value="<?=isset($_POST[$data['field'][7]]) ? $_POST[$data['field'][7]]: $data['fetch'][$data['field'][7]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Capacity System</label>
-							    <input type="number" class="form-control" placeholder="Capacity System" name="<?=$data['field'][8];?>" required value="<?=isset($_POST[$data['field'][8]]) ? $_POST[$data['field'][8]]: $data['fetch'][$data['field'][8]];?>">
+							    <input type="number" class="form-control" placeholder="Capacity System" name="<?=$data['field'][8];?>"  value="<?=isset($_POST[$data['field'][8]]) ? $_POST[$data['field'][8]]: $data['fetch'][$data['field'][8]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Inverter Capacity</label>
-							    <input type="number" class="form-control" placeholder="Inverter Capacity" name="<?=$data['field'][9];?>" required value="<?=isset($_POST[$data['field'][9]]) ? $_POST[$data['field'][9]]: $data['fetch'][$data['field'][9]];?>">
+							    <input type="number" class="form-control" placeholder="Inverter Capacity" name="<?=$data['field'][9];?>"  value="<?=isset($_POST[$data['field'][9]]) ? $_POST[$data['field'][9]]: $data['fetch'][$data['field'][9]];?>">
 							</div>
 
 
 			               <div class="form-group has-feedback">
 						    <label class="center">Roof Type</label>
-						      <select id="roof_type" class="form-control" name="<?=$data['field'][10];?>" required>
+						      <select id="roof_type" class="form-control" name="<?=$data['field'][10];?>" >
 						        <option value="<?=isset($_POST[$data['field'][10]]) ? $_POST[$data['field'][10]]: $data['fetch'][$data['field'][10]];?>" label="--Please choose an option--">
 						        </option>
 							        <?php foreach ($data['roof_type'] as $key => $value) {
@@ -145,56 +134,56 @@ margin-top: 5px;
 
 							<div class="form-group has-feedback">
 								<label class="center">Metre</label>
-							    <input type="number" class="form-control" placeholder="Metre" name="<?=$data['field'][11];?>" required value="<?=isset($_POST[$data['field'][11]]) ? $_POST[$data['field'][11]]: $data['fetch'][$data['field'][11]];?>">
+							    <input type="number" class="form-control" placeholder="Metre" name="<?=$data['field'][11];?>"  value="<?=isset($_POST[$data['field'][11]]) ? $_POST[$data['field'][11]]: $data['fetch'][$data['field'][11]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 							<!--(bottom three options of house type) -->
 								<label class="center">Roof Height</label>
-							    <input type="number" class="form-control" placeholder="Roof Height" name="<?=$data['field'][12];?>" required value="<?=isset($_POST[$data['field'][12]]) ? $_POST[$data['field'][12]]: $data['fetch'][$data['field'][12]];?>">
+							    <input type="number" class="form-control" placeholder="Roof Height" name="<?=$data['field'][12];?>"  value="<?=isset($_POST[$data['field'][12]]) ? $_POST[$data['field'][12]]: $data['fetch'][$data['field'][12]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Tilt Frame</label>
-							    <input type="number" class="form-control" placeholder="Tilt Frame" name="<?=$data['field'][13];?>" required value="<?=isset($_POST[$data['field'][13]]) ? $_POST[$data['field'][13]]: $data['fetch'][$data['field'][13]];?>">
+							    <input type="number" class="form-control" placeholder="Tilt Frame" name="<?=$data['field'][13];?>"  value="<?=isset($_POST[$data['field'][13]]) ? $_POST[$data['field'][13]]: $data['fetch'][$data['field'][13]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Split Array</label>
-							    <input type="number" class="form-control" placeholder="Split Array" name="<?=$data['field'][14];?>" required value="<?=isset($_POST[$data['field'][14]]) ? $_POST[$data['field'][14]]: $data['fetch'][$data['field'][14]];?>">
+							    <input type="number" class="form-control" placeholder="Split Array" name="<?=$data['field'][14];?>"  value="<?=isset($_POST[$data['field'][14]]) ? $_POST[$data['field'][14]]: $data['fetch'][$data['field'][14]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Main Switch</label>
-							    <input type="number" class="form-control" placeholder="Main Switch" name="<?=$data['field'][15];?>" required value="<?=isset($_POST[$data['field'][15]]) ? $_POST[$data['field'][15]]: $data['fetch'][$data['field'][15]];?>">
+							    <input type="number" class="form-control" placeholder="Main Switch" name="<?=$data['field'][15];?>"  value="<?=isset($_POST[$data['field'][15]]) ? $_POST[$data['field'][15]]: $data['fetch'][$data['field'][15]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Switch Board Upgrade</label>
-							    <input type="number" class="form-control" placeholder="Switch Board Upgrade" name="<?=$data['field'][16];?>" required value="<?=isset($_POST[$data['field'][16]]) ? $_POST[$data['field'][16]]: $data['fetch'][$data['field'][16]];?>">
+							    <input type="number" class="form-control" placeholder="Switch Board Upgrade" name="<?=$data['field'][16];?>"  value="<?=isset($_POST[$data['field'][16]]) ? $_POST[$data['field'][16]]: $data['fetch'][$data['field'][16]];?>">
 							</div>
 							<div class="form-group has-feedback">
 								<label class="center">NMI</label>
-							    <input type="number" class="form-control" placeholder="NMI" name="<?=$data['field'][17];?>" required value="<?=isset($_POST[$data['field'][17]]) ? $_POST[$data['field'][17]]: $data['fetch'][$data['field'][17]];?>">
+							    <input type="number" class="form-control" placeholder="NMI" name="<?=$data['field'][17];?>"  value="<?=isset($_POST[$data['field'][17]]) ? $_POST[$data['field'][17]]: $data['fetch'][$data['field'][17]];?>">
 							</div>
 
 							<div class="form-group has-feedback">
 								<label for="addn">Additional Notes</label><br>	
-								<textarea id="addn" type="text" style="resize:none; width:100%;" rows="5" cols="30" maxlength="1000" size="1000" name="<?=$data['field'][18];?>" class="" required>
+								<textarea id="addn" type="text" style="resize:none; width:100%;" rows="5" cols="30" maxlength="1000" size="1000" name="<?=$data['field'][18];?>" class="" >
 								<?=isset($_POST[$data['field'][18]]) ? $_POST[$data['field'][18]]: $data['fetch'][$data['field'][18]];?></textarea>
 							</div>
 
 							<div class="form-group has-feedback">
 								<label class="center">Installer Company</label>
-							    <input type="text" class="form-control" placeholder="Installer Company" name="<?=$data['field'][19];?>" required value="<?=isset($_POST[$data['field'][19]]) ? $_POST[$data['field'][19]]: $data['fetch'][$data['field'][19]];?>">
+							    <input type="text" class="form-control" placeholder="Installer Company" name="<?=$data['field'][19];?>"  value="<?=isset($_POST[$data['field'][19]]) ? $_POST[$data['field'][19]]: $data['fetch'][$data['field'][19]];?>">
 							</div>
 							<div class="form-group has-feedback">
 								<label class="center">Meter Number</label>
-							    <input type="number" class="form-control" placeholder="Meter Number" name="<?=$data['field'][20];?>" required value="<?=isset($_POST[$data['field'][20]]) ? $_POST[$data['field'][20]]: $data['fetch'][$data['field'][20]];?>">
+							    <input type="number" class="form-control" placeholder="Meter Number" name="<?=$data['field'][20];?>"  value="<?=isset($_POST[$data['field'][20]]) ? $_POST[$data['field'][20]]: $data['fetch'][$data['field'][20]];?>">
 							</div>
 						    <div class="form-group has-feedback">
 						      <label class="center">Job Type</label>
-						      <select id="job_type" class="form-control sel" name="<?=$data['field'][21];?>" required>
+						      <select id="job_type" class="form-control sel" name="<?=$data['field'][21];?>" >
 						        <option value="<?=isset($_POST[$data['field'][21]]) ? $_POST[$data['field'][21]]: $data['fetch'][$data['field'][21]];?>" label="--Please choose an option--" class="">
 						        </option>
 						        <?php foreach ($data['job_type'] as $key => $value) {
@@ -210,26 +199,26 @@ margin-top: 5px;
 
 						    <div class="form-group has-feedback">
 								<label for="desc">Description</label><br>	
-								<textarea type="text" style="resize:none; width:100%;" rows="5" cols="30" maxlength="1000" size="1000" name="<?=$data['field'][22];?>" class="" required>
+								<textarea type="text" style="resize:none; width:100%;" rows="5" cols="30" maxlength="1000" size="1000" name="<?=$data['field'][22];?>" class="" >
 								<?=isset($_POST[$data['field'][22]]) ? $_POST[$data['field'][22]]: $data['fetch'][$data['field'][22]];?></textarea>
 							</div>
 						  
 
 						    <div class="form-group has-feedback">
 						    	<label class="center">Sale Date</label>
-						     	<input type="date" class="form-control" placeholder="Sale Date" name="<?=$data['field'][23];?>" required value="<?=isset($_POST['sdate']) ? $_POST['sdate']: $data['fetch'][$data['field'][23]];?>">
+						     	<input type="date" class="form-control" placeholder="Sale Date" name="<?=$data['field'][23];?>"  value="<?=isset($_POST['sdate']) ? $_POST['sdate']: $data['fetch'][$data['field'][23]];?>">
 						    </div>
 
 
 						    <div class="form-group has-feedback">
 						    	<label class="center">Proposed Installation Date</label>
-						     	<input type="date" class="form-control" placeholder="Proposed Installation Date" name="<?=$data['field'][24];?>" required value="<?=isset($_POST['idate']) ? $_POST['idate']: $data['fetch'][$data['field'][24]];?>">
+						     	<input type="date" class="form-control" placeholder="Proposed Installation Date" name="<?=$data['field'][24];?>"  value="<?=isset($_POST['idate']) ? $_POST['idate']: $data['fetch'][$data['field'][24]];?>">
 						    </div>
 			               
 						   
 						   	<div class="form-group has-feedback">
 						      <label class="center">Customer Temperament</label>
-						      <select id="cust_temp" class="form-control" name="<?=$data['field'][25];?>" required>
+						      <select id="cust_temp" class="form-control" name="<?=$data['field'][25];?>" >
 						        <option value="<?=isset($_POST['cust_temp']) ? $_POST['cust_temp']: $data['fetch']['ID_Priority'];?>" label="--Please choose an option--">
 						        </option>
 						        <?php foreach ($data['cust_temp'] as $key => $value) {
@@ -250,7 +239,7 @@ margin-top: 5px;
 							<!--
 						    <div class="form-group has-feedback">
 								<label class="center">GST Document</label>
-						     	<input type="file" class="form-control" placeholder="GST Document" name="<?=$data['field'][27];?>" required value="<?=isset($_POST[$data['field'][27]]) ? $_POST[$data['field'][27]]: $data['fetch'][$data['field'][27]];?>">
+						     	<input type="text" class="form-control" placeholder="GST Document" name="<?=$data['field'][27];?>"  value="<?=isset($_POST[$data['field'][27]]) ? $_POST[$data['field'][27]]: $data['fetch'][$data['field'][27]];?>">
 						     	<?=isset($_POST[$data['field'][27]]) ? $_POST[$data['field'][27]]: $data['fetch'][$data['field'][27]];?>
                   				<p class="help-block">Image file only, recommended size: 5mb.
                       			</p>
@@ -258,12 +247,13 @@ margin-top: 5px;
 
 						    <div class="form-group has-feedback">
 								<label class="center">GST File</label>
-						     	<input type="file" class="form-control" placeholder="File Base" name="<?=$data['field'][28];?>" required value="<?=isset($_POST[$data['field'][28]]) ? $_POST[$data['field'][28]]: $data['fetch'][$data['field'][28]];?>">
+						     	<input type="text" class="form-control" placeholder="File Base" name="<?=$data['field'][28];?>"  value="<?=isset($_POST[$data['field'][28]]) ? $_POST[$data['field'][28]]: $data['fetch'][$data['field'][28]];?>">
 						     	<?=isset($_POST[$data['field'][28]]) ? $_POST[$data['field'][28]]: $data['fetch'][$data['field'][28]];?>
 						     	<p class="help-block">Image file only, recommended size: 5mb.
 						    </div>
 							-->
-			
+
+		
   <figure>		
 	<div class="dragArea" style="width:160px; height:160px;">
 	 <center>
@@ -350,7 +340,8 @@ margin-top: 5px;
 <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
 
 <script>
-	// Required for drag and drop file access
+	//  for drag and drop file access
+
 	jQuery.event.props.push('dataTransfer');
 	$(function(){
 		var dropTimer;
@@ -369,35 +360,35 @@ margin-top: 5px;
 			if (event.currentTarget == dropTarget[0]) {
 				dropTarget.addClass('over');
 			}
-			return false; // Required for drop to work
+			return false; //  for drop to work
 		});
 		dropTarget2.on("dragover", function(event) {
 			clearTimeout(dropTimer);
 			if (event.currentTarget == dropTarget2[0]) {
 				dropTarget2.addClass('over');
 			}
-			return false; // Required for drop to work
+			return false; //  for drop to work
 		});
 		dropTarget3.on("dragover", function(event) {
 			clearTimeout(dropTimer);
 			if (event.currentTarget == dropTarget3[0]) {
 				dropTarget3.addClass('over');
 			}
-			return false; // Required for drop to work
+			return false; //  for drop to work
 		});
 		dropTarget4.on("dragover", function(event) {
 			clearTimeout(dropTimer);
 			if (event.currentTarget == dropTarget4[0]) {
 				dropTarget4.addClass('over');
 			}
-			return false; // Required for drop to work
+			return false; //  for drop to work
 		});
 		dropTarget5.on("dragover", function(event) {
 			clearTimeout(dropTimer);
 			if (event.currentTarget == dropTarget5[0]) {
 				dropTarget5.addClass('over');
 			}
-			return false; // Required for drop to work
+			return false; //  for drop to work
 		});
 		dropTarget2.on('dragleave', function(event) {
 			if (event.currentTarget == dropTarget2[0]) {
@@ -550,12 +541,7 @@ margin-top: 5px;
 				var image = new Image();
 				image.onload = function(){
 					var canvas = document.createElement("canvas");
-					/*
-					if(image.height > size) {
-						image.width *= size / image.height;
-						image.height = size;
-					}
-					*/
+		
 					if(image.width > size) {
 						image.height *= size / image.width;
 						image.width = size;
@@ -581,3 +567,4 @@ margin-top: 5px;
 	
 	
 </script>
+

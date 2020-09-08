@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="box-body">
-                  <div class="<?=$data['list_col-size'];?>">
+                  <div class="">
                     <table id="table1" class="table table-bordered table-striped">
 
                         <thead>
@@ -27,10 +27,10 @@
                         <tbody>
                         <?php foreach ($data['list'] as $k => $val) { ?>
                           <tr>
-                            <td data-order='<?=$val['SaleDate'];?>'>
+                            <td data-order=''>
                                 <?php
                                     echo update_button('page/settings_edit',$val['ID']);
-                                    echo delete_button('page/settings_delete',$val['ID']); 
+                                    //echo delete_button('page/settings_delete',$val['ID']); 
                                 ?>
                             </td>
                             <td><?=ucwords($val['Name']);?></td>

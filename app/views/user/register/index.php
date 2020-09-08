@@ -15,22 +15,9 @@
     <div class="form-group has-feedback">
       <input type="email" class="form-control is" placeholder="Email" name="email" required value="<?=isset($_POST['email']) ? $_POST['email']:'';?>">
     </div>
+	<input type="hidden" id="user_type" name="user_type">
 
-    <div class="form-group has-feedback">
-      <label class="center">User Type</label>
-      <select id="user_type" name="user_type" class="form-control sel" required>
-        <option value="<?=isset($_POST['user_type']) ? $_POST['user_type']:'';?>" label="--Please choose an option--"></option>
-        <?php echo "<p>User Type</p>";
-          foreach ($data['user_type'] as $key => $value) {
-          if ($key == $data['fetch']['ID_UserType']){
-            $selected = "selected=\"selected\""; }
-          else {
-            $selected = ($data['fetch']['ID_UserType']==$key) ? 'selected':'';
-          }
-          echo '<option value="'.$key.'" '.$selected.'>'.$value.'</option>';
-        } ?>
-      </select>
-    </div>
+
 
 <?=$this->view('user/footer',$data);?>
 <script>
